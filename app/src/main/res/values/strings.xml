@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SegundaProva</string>
+
+    <string name="hello_blank_fragment">Hello world</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="cidade">Cidade</string>
+    <string name="anoNascimento">Ano nascimento</string>
+    <string name="cpf">Cpf</string>
+    <string name="profissao">Profissao</string>
+    <string name="cadastro">Cadastro</string>
+</resources>
