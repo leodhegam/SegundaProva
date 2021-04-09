@@ -1,4 +1,4 @@
-package com.tads.segundaprova.database.model
+package com.tads.segundaprova.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

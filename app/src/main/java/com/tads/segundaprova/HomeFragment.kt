@@ -24,6 +24,7 @@ class HomeFragment : Fragment() {
         binding.buttonCadastrar.setOnClickListener{
             Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_cadastraFragment)
         }
+
         viewmodel = ViewModelProvider(this).get(HomeFragmentViewModel::class.java)
 
         val adapter = UsuarioAdapter()

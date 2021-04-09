@@ -1,8 +1,8 @@
-package com.tads.segundaprova.database.dao
+package com.tads.segundaprova.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.tads.segundaprova.database.model.Usuario
+import com.tads.segundaprova.model.Usuario
 
 @Dao
 interface UsuarioDAO {
@@ -13,14 +13,14 @@ interface UsuarioDAO {
     fun insert(usuario: Usuario)
 
     @Update //editar
-    fun update(usuario: Usuario)
+     fun update(usuario: Usuario)
 
     @Query("SELECT * FROM tabela_usuario") //listar todos
-    fun listAll(): LiveData<List<Usuario>>
+     fun listAll(): LiveData<List<Usuario>>
 
     @Query("SELECT * FROM tabela_usuario WHERE id = :id") //listar por ID
-    fun findById(id: Long): Usuario
+     fun findById(id: Long): Usuario
 
     @Delete //excluir
-    fun delete(usuario: Usuario)
+     fun delete(usuario: Usuario)
 }
