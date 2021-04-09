@@ -12,7 +12,7 @@ import com.tads.segundaprova.database.Bd
 import com.tads.segundaprova.databinding.FragmentCadastraBinding
 
 class CadastraFragment : Fragment() {
-    lateinit var repository: UsuarioRepository
+
     lateinit var viewmodel: CadastraFragmentViewModel
     lateinit var binding: FragmentCadastraBinding
     lateinit var bd: Bd
