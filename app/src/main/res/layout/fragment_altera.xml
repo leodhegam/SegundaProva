@@ -168,11 +168,10 @@
             tools:layout_editor_absoluteX="51dp" />
 
         <Button
-            android:id="@+id/butcadastrar"
+            android:id="@+id/butAlterar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cadastrar
-"
+            android:text="@string/Confirmar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.414"
@@ -181,6 +180,18 @@
             app:layout_constraintVertical_bias="0.388"
             tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/butVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butAlterar"
+            app:layout_constraintVertical_bias="0.163"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="136dp">
+
+        </Button>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

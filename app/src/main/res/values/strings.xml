@@ -10,4 +10,6 @@
     <string name="profissao">Profissao</string>
     <string name="cadastro">Cadastro</string>
     <string name="cancelar">Cancelar</string>
+    <string name="Confirmar">Confirmar</string>
+    <string name="Voltar">Voltar</string>
 </resources>

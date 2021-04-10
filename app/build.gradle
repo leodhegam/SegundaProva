@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
 }
 android {
     compileSdkVersion 30
@@ -11,7 +12,6 @@ android {
 
     // dataBinding = true
     // }
-
     defaultConfig {
         applicationId "com.tads.segundaprova"
         minSdkVersion 19
@@ -70,8 +70,6 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
-
-
 
 
 }
