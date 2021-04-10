@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_alteraFragment"
             app:destination="@id/alteraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detalhesFragment"
+            app:destination="@id/detalhesFragment" />
     </fragment>
     <fragment
         android:id="@+id/cadastraFragment"
@@ -35,6 +38,23 @@
             app:destination="@id/homeFragment"
             app:launchSingleTop="false"
             app:popUpTo="@id/alteraFragment"
+            />
+        <argument
+            android:name="usuarioId"
+            app:argType="integer"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/detalhesFragment"
+        android:name="com.tads.segundaprova.DetalhesFragment"
+        android:label="fragment_detalhes"
+        tools:layout="@layout/fragment_detalhes" >
+        <action
+            android:id="@+id/action_detalhesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/detalhesFragment"
+
             />
         <argument
             android:name="usuarioId"

@@ -60,11 +60,11 @@ class HomeFragment : Fragment() {
                 object : NovoRecyclerViewClickListener.onItemClickListener {
                     override fun onItemClick(v: View, position: Int) {
 
-                      Navigation.findNavController(requireView()).navigate(HomeFragmentDirections.actionHomeFragmentToAlteraFragment(1+position))
+                      Navigation.findNavController(requireView()).navigate(HomeFragmentDirections.actionHomeFragmentToDetalhesFragment(position+1))
                     }
 
                     override fun onItemLongClick(v: View, position: Int) {
-                        TODO("Not yet implemented")
+                        Navigation.findNavController(requireView()).navigate(HomeFragmentDirections.actionHomeFragmentToAlteraFragment(position+1))
                     }
                 })
         )
