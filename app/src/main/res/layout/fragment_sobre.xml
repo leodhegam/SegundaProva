@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Fragment.SobreFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sobreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="136dp" />
+
+        <TextView
+            android:id="@+id/NometextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomeLeo"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="136dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="@string/email"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <TextView
+            android:id="@+id/EmailtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailUFRN"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="@string/cidade"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <TextView
+            android:id="@+id/CidadetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cidadeNatal"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="@string/dataNascimento"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="467dp" />
+
+        <TextView
+            android:id="@+id/DatanascimentotextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21/08/1998"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="467dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="@string/techs"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <TextView
+            android:id="@+id/TechsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/techsnames"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="@string/Github"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="407dp" />
+
+        <TextView
+            android:id="@+id/GithubTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/githubPessoal"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="407dp" />
+
+        <Button
+            android:id="@+id/ButVoltarSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Voltar"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="588dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
