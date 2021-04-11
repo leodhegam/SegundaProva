@@ -1,15 +1,14 @@
 package com.tads.segundaprova
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavArgs
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.NavigationUI
 import com.tads.segundaprova.database.Bd
 import com.tads.segundaprova.databinding.FragmentAlteraBinding
 import com.tads.segundaprova.model.Usuario
@@ -71,6 +70,23 @@ class AlteraFragment : Fragment() {
             }
 
         }
+        setHasOptionsMenu(true)
         return binding.root
     }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.options_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.ajuda){
+            var dialog = DialogFragment(R.layout.ajuda_altera)
+            dialog.show(requireActivity().supportFragmentManager, "altera")
+        }
+
+        return NavigationUI.onNavDestinationSelected(item, Navigation.findNavController(requireView()))||
+                super.onOptionsItemSelected(item)
+    }
+
+
 }

@@ -21,4 +21,10 @@
     <string name="githubPessoal">leodhegam</string>
     <string name="Github">Github</string>
     <string name="nomeLeo">Leonardo Dhegam</string>
+    <string name="ajudaAltera">Nesta tela , você poderá alterar os campos de cadastro e atualizar suas informações. Preencha os campos que deseja modificar e aperte em confirmar</string>
+    <string name="ajudaCadastro">Nesta tela, você poderá cadastrar um novo usuário. Siga as instruções dos campos e ao terminar, clique em cadastrar</string>
+    <string name="ajudaHome">Nesta tela , você poderá ver os usuários cadastrados no sitema , podendo ver suas informações, editar o cadastro e cadastrar novos usuários</string>
+    <string name="ajudaDetalhes">Nesta tela , você poderá verificar as informações de cada usuário cadastrado no sistema.</string>
+    <string name="instituicao">Instituição</string>
+    <string name="ufrn">UFRN</string>
 </resources>

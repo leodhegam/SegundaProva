@@ -1,142 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="Fragment.SobreFragment">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/sobreLayout"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sobreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/name"
 
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="136dp" />
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="92dp"
+            android:text="@string/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
 
         <TextView
             android:id="@+id/NometextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nomeLeo"
 
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="225dp"
-            tools:layout_editor_absoluteY="136dp" />
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="118dp"
+            android:text="@string/nomeLeo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="280dp"
             android:text="@string/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
 
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="212dp" />
 
         <TextView
             android:id="@+id/EmailtextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
             android:text="@string/emailUFRN"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="206dp"
-            tools:layout_editor_absoluteY="212dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/NometextView"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:text="@string/cidade"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="284dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/techs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/CidadetextView"
+            android:id="@+id/TecnologiasTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cidadeNatal"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="249dp"
-            tools:layout_editor_absoluteY="284dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/techsnames"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:text="@string/dataNascimento"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="467dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="250dp"
+            android:text="@string/instituicao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TecnologiasTextView"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/DatanascimentotextView"
+            android:id="@+id/InstituicaoTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="21/08/1998"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="206dp"
-            tools:layout_editor_absoluteY="467dp" />
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="72dp"
+            android:text="@string/ufrn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TecnologiasTextView"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:text="@string/techs"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="352dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="250dp"
+            android:text="@string/Github"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/TechsTextView"
+            android:id="@+id/GithubPessoalTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/techsnames"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="352dp" />
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/githubPessoal"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/InstituicaoTextView"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:text="@string/Github"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="407dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="250dp"
+            android:text="@string/cidade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/GithubTextView"
+            android:id="@+id/CidadeNatalTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/githubPessoal"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="72dp"
+            android:text="@string/cidadeNatal"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/GithubPessoalTextView"
+            tools:ignore="MissingConstraints" />
 
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="256dp"
-            tools:layout_editor_absoluteY="407dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
-        <Button
-            android:id="@+id/ButVoltarSobre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Voltar"
-
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="588dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</layout>
+    </layout>

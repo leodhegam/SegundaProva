@@ -1,13 +1,13 @@
 package com.tads.segundaprova
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tads.segundaprova.databinding.FragmentHomeBinding
 
@@ -39,11 +39,6 @@ class HomeFragment : Fragment() {
 
         binding.apply {
 
-            buttonCadastrar.setOnClickListener {
-                Navigation.findNavController(it)
-                    .navigate(R.id.action_homeFragment_to_cadastraFragment)
-            }
-
             val layout = LinearLayoutManager(
                 parentFragment?.requireContext(),
                 LinearLayoutManager.VERTICAL,
@@ -68,6 +63,22 @@ class HomeFragment : Fragment() {
                     }
                 })
         )
+        setHasOptionsMenu(true)
+
         return binding.root
+    }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.options_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.ajuda){
+            var dialog = DialogFragment(R.layout.ajuda_home)
+            dialog.show(requireActivity().supportFragmentManager, "cadastro")
+        }
+
+        return NavigationUI.onNavDestinationSelected(item, Navigation.findNavController(requireView()))||
+                super.onOptionsItemSelected(item)
     }
 }

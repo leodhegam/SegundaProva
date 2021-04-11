@@ -12,10 +12,11 @@ import com.tads.segundaprova.model.Usuario
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding:ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val navController = Navigation.findNavController(this, R.id.myNavHostFragment)
