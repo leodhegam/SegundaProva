@@ -10,7 +10,7 @@ interface UsuarioDAO {
 //Você deve implementar métodos para: cadastrar, editar, listar todos, listar por ID, excluir
 
     @Insert //cadastrar
-    fun insert(usuario: Usuario)
+    fun insert(usuario: UsuarioDAO)
 
     @Update //editar
      fun update(usuario: Usuario)

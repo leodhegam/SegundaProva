@@ -64,6 +64,6 @@
     <fragment
         android:id="@+id/sobreFragment"
         android:name="com.tads.segundaprova.SobreFragment"
-        android:label="fragment_sobre"
+        android:label="Sobre"
         tools:layout="@layout/fragment_sobre" />
 </navigation>

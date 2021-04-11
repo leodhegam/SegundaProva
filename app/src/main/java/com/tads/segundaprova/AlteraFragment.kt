@@ -64,10 +64,6 @@ class AlteraFragment : Fragment() {
                 Navigation.findNavController(it)
                     .navigate(R.id.action_alteraFragment_to_homeFragment)
             }
-            butVoltar.setOnClickListener {
-                Navigation.findNavController(it)
-                    .navigate(R.id.action_alteraFragment_to_homeFragment)
-            }
 
         }
         setHasOptionsMenu(true)
