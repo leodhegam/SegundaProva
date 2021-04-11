@@ -41,6 +41,7 @@ class AlteraFragment : Fragment() {
             anoNascimentoEdit.setText(usuario.anoNascimento.toString())
             cpfEdit.setText(usuario.cpf.toString())
             profissaoEdit.setText(usuario.profissao)
+
             butAlterar.setOnClickListener {
 
                 val nome = nomeEdit.text.toString()

@@ -35,7 +35,7 @@ class CadastraFragment : Fragment() {
 
                 viewmodel.usuarios.anoNascimento = anoNascimentoEdit.text.toString().toInt()
 
-                viewmodel.usuarios.profissao = profissaoEdit.toString()
+                viewmodel.usuarios.profissao = profissaoEdit.text.toString()
 
                 bd.instance().usuarioDao().insert(viewmodel.usuarios)
 

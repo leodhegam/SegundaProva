@@ -52,6 +52,7 @@ class HomeFragment : Fragment() {
             NovoRecyclerViewClickListener(
                 this.requireActivity(),
                 binding.recyclerUserView,
+
                 object : NovoRecyclerViewClickListener.onItemClickListener {
                     override fun onItemClick(v: View, position: Int) {
 

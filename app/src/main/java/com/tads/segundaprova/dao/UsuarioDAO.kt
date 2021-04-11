@@ -10,17 +10,17 @@ interface UsuarioDAO {
 //Você deve implementar métodos para: cadastrar, editar, listar todos, listar por ID, excluir
 
     @Insert //cadastrar
-    fun insert(usuario: UsuarioDAO)
+    fun insert(usuario: Usuario)
 
     @Update //editar
-     fun update(usuario: Usuario)
+    fun update(usuario: Usuario)
 
     @Query("SELECT * FROM tabela_usuario") //listar todos
-     fun listAll(): LiveData<List<Usuario>>
+    fun listAll(): LiveData<List<Usuario>>
 
     @Query("SELECT * FROM tabela_usuario WHERE id = :id") //listar por ID
-     fun findById(id: Long): Usuario
+    fun findById(id: Long): Usuario
 
     @Delete //excluir
-     fun delete(usuario: Usuario)
+    fun delete(usuario: Usuario)
 }

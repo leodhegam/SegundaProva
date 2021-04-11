@@ -27,4 +27,5 @@
     <string name="ajudaDetalhes">Nesta tela , você poderá verificar as informações de cada usuário cadastrado no sistema.</string>
     <string name="instituicao">Instituição</string>
     <string name="ufrn">UFRN</string>
+    <string name="usuario">Usuarios</string>
 </resources>
